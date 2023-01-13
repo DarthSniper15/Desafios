@@ -205,7 +205,19 @@ Desafio 1*/
 .sinopse{
 	padding-top: 35px;
 	justify-self: center;
+}
+
+.animanext{	
+	padding-top: 35px;
+	justify-self: center;
 	animation-name: show;
+	animation-duration: 1s;
+}
+
+.nextsin{	
+	padding-top: 35px;
+	justify-self: center;
+	animation-name: next;
 	animation-duration: 1s;
 }
 
@@ -213,4 +225,9 @@ Desafio 1*/
 @keyframes show{
 	from {opacity: 0%; margin-right: 50px; }
 	to {opacity: 100%; margin-right: 0;}
+}
+
+@keyframes next{
+	from {opacity: 100%; margin-left: 0px; }
+	to {opacity: 0%; margin-left: 50px;}	
 }
