@@ -1,21 +1,37 @@
 var x = 0;
-
+/*Adicionar*/
 function plus(){
 	x++;
 	document.getElementById("valor").innerHTML = x;
 	return x;
 };
-
+/*Subtrair*/
 function minus(){
 	x--;
 	document.getElementById("valor").innerHTML = x;
 	return x;
 };
-
+/*Zerar*/
+function zero(){
+	x = 0;
+	document.getElementById("valor").innerHTML = x;
+	return x;
+};
+/*Animação de Transição(trabalhando nisso)*/
+function next(){
+	$('.sinopse').addClass('nextsin');
+}
+/*Animação de Próximo*/
+function show(){
+	$('.sinopse').removeClass('animanext');
+}
+/*Troca de Filme*/
 function movie(mov){
 	//document.getElementById("film")
 	switch(mov){
 		case "swi":
+			setTimeout(show, 500);
+			$('.sinopse').addClass('animanext');
 			$('.fil1').addClass('ativo');
 			$('.fil2').removeClass('ativo');
 			$('.fil3').removeClass('ativo');
@@ -27,6 +43,8 @@ function movie(mov){
 			document.getElementById('resu').innerHTML = swi;
 			break;
 		case "hpc":
+			setTimeout(show, 500);
+			$('.sinopse').addClass('animanext');
 			$('.fil2').addClass('ativo');
 			$('.fil1').removeClass('ativo');
 			$('.fil3').removeClass('ativo');
@@ -38,6 +56,8 @@ function movie(mov){
 			document.getElementById('resu').innerHTML = hpc;
 			break;
 		case "pdc":
+			setTimeout(show, 500);
+			$('.sinopse').addClass('animanext');
 			$('.fil3').addClass('ativo');
 			$('.fil2').removeClass('ativo');
 			$('.fil1').removeClass('ativo');
@@ -49,6 +69,8 @@ function movie(mov){
 			document.getElementById('resu').innerHTML = pdc;
 			break;
 		case "mmf":
+			setTimeout(show, 500);
+			$('.sinopse').addClass('animanext');
 			$('.fil4').addClass('ativo');
 			$('.fil2').removeClass('ativo');
 			$('.fil3').removeClass('ativo');
@@ -60,6 +82,8 @@ function movie(mov){
 			document.getElementById('resu').innerHTML = mmf;
 			break;
 		case "cre":
+			setTimeout(show, 500);
+			$('.sinopse').addClass('animanext');
 			$('.fil5').addClass('ativo');
 			$('.fil2').removeClass('ativo');
 			$('.fil3').removeClass('ativo');
@@ -71,6 +95,8 @@ function movie(mov){
 			document.getElementById('resu').innerHTML = cre;
 			break;
 		case "mad":
+			setTimeout(show, 500);
+			$('.sinopse').addClass('animanext');
 			$('.fil6').addClass('ativo');
 			$('.fil2').removeClass('ativo');
 			$('.fil3').removeClass('ativo');
@@ -82,10 +108,9 @@ function movie(mov){
 			document.getElementById('resu').innerHTML = mad;
 			break;
 	}
-	//$('.filme').addClass('ativo');
 }
-
-{/*Sinopse-Titulos-Capas*/
+/*Sinopse-Titulos-Capas*/
+{
 	/*Star Wars*/
 	var switi = "Star Wars: O Império Contra Ataca";
 	var swiim = "images/swi.png";
