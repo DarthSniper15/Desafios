@@ -1,0 +1,216 @@
+/*Layout Geral*/
+*{
+	font-family: consolas;
+	font-weight: bold;
+}
+
+body{
+	background-color: lightgrey;
+}
+
+button{
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+a{
+	text-decoration: none;
+}
+
+th{
+	width: 100px;
+	height: 10px;
+	padding: 5px;
+}
+
+/*Centralizador da página*/
+.meio{	
+	padding-top: 35vh;
+	text-align: center;
+}
+
+/*Botões
+Desafio 1*/
+.de1{
+	background-color: transparent;
+	color: black;
+	border: 2px solid midnightblue;
+	border-radius: 5px;
+	transition: 0.5s all;
+}
+.de1:hover{
+	background-color: midnightblue;
+	color: snow;
+	transition: 0.5s all;
+}
+
+/*Desafio 2*/
+.de2{
+	background-color: transparent;
+	color: black;
+	border: 2px solid darkred;
+	border-radius: 5px;
+	transition: 0.5s all;
+}
+.de2:hover{
+	background-color: darkred;
+	color: snow;
+	transition: 0.5s all;
+}
+
+/*Desafio 3*/
+.de3{
+	background-color: transparent;
+	color: black;
+	border: 2px solid darkgreen;
+	border-radius: 5px;
+	transition: 0.5s all;
+}
+.de3:hover{
+	background-color: darkgreen;
+	color: snow;
+	transition: 0.5s all;
+}
+
+/*Botões do contador*/
+.contb{
+	background-color: transparent;
+	width: 50px;
+	height: 50px;
+	color: black;
+	font-size: 30px;
+	font-weight: bolder;
+	border: 2px solid purple;
+	border-radius: 50px;
+	transition: 0.5s all;
+}
+.contb:hover{
+	background-color: purple;
+	color: snow;
+	transition: 0.5s all;
+}
+
+/*Display do Contador*/
+.conta{
+	width: 100px;
+	height: 50px;
+	border: 2px solid black;
+	border-radius: 5px;
+	cursor: default;
+}
+
+/*Editor de Texto*/
+.editor{
+	padding: 10px;
+	text-align: center;
+}
+
+/*caixa de texto*/
+.textbox{
+	width: 700px;
+	height: 200px;
+}
+
+/*Salvar*/
+.save{
+	background-color: transparent;
+	color: black;
+	border: 2px solid blue;
+	border-radius: 5px;
+	transition: 0.5s all;
+}
+.save:hover{
+	background-color: blue;
+	color: snow;
+	transition: 0.5s all;
+}
+
+/*Resumo Filmes*/
+.filme{
+	background-color: transparent;
+	border: 2px solid darkorange;
+	border-radius: 5px;
+	width: auto;
+	height: 30px;
+	transition: 0.5s all;
+}
+.filme:hover{
+	background-color: darkorange;
+	color: snow;
+	transition: 0.5s all;
+}
+
+/*Selecionar o Filme*/
+.fil1.ativo{
+	background-color: darkorange;
+	color: snow;
+	transition: 0.5s all;	
+}
+.fil2.ativo{
+	background-color: darkorange;
+	color: snow;
+	transition: 0.5s all;	
+}
+.fil3.ativo{
+	background-color: darkorange;
+	color: snow;
+	transition: 0.5s all;	
+}
+.fil4.ativo{
+	background-color: darkorange;
+	color: snow;
+	transition: 0.5s all;	
+}
+.fil5.ativo{
+	background-color: darkorange;
+	color: snow;
+	transition: 0.5s all;	
+}
+.fil6.ativo{
+	background-color: darkorange;
+	color: snow;
+	transition: 0.5s all;	
+}
+
+/*Capas*/
+
+/*Layout Sinopse*/
+.meio-filme{
+	text-align: center;
+	display: grid;
+}
+
+.capa{
+	width: 250px;
+	height: 350px;
+	border-radius: 10px;
+	float: left;
+}
+
+.resumo{
+	width: 700px;
+	height: auto;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.titulo{
+	font-size: 30px;
+	margin-top: 70px;
+}
+
+.sinopse{
+	padding-top: 35px;
+	justify-self: center;
+	animation-name: show;
+	animation-duration: 1s;
+}
+
+/*Animação de aparecer*/
+@keyframes show{
+	from {opacity: 0%; margin-right: 50px; }
+	to {opacity: 100%; margin-right: 0;}
+}
